@@ -1,0 +1,413 @@
+/* poppins font import  */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    color: white;
+    font-size: 16px;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* start of a hero section */
+.wrapper {
+    background: linear-gradient(160deg, rgba(0,0,0,1) 0%, rgba(74,40,0,1) 100%);
+    width: 100%;
+}
+
+.container {
+    width: 1400px;
+    margin: 0 auto;
+}
+
+header {
+    padding: 37px 0px;
+}
+
+header .logo,
+footer .blocks .logo {
+    text-transform: uppercase;
+    font-size: 29px;
+    font-weight: 800;
+    padding: 37px 0;
+}
+
+header nav {
+    float: right;
+    width: 50%;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    z-index: 2;
+    position: relative;
+}
+
+header nav ul li {
+    display: inline-block;
+}
+
+header nav ul li a {
+    color: #fff;
+}
+
+header nav ul li.active::after {
+    content: '';
+    display: block;
+    width: 40px;
+    height: 5px;
+    background: #dc7000;
+    border-radius: 20px;
+    position: relative;
+    top: 6px;
+    left: -15px;
+}
+
+header nav ul li:not(.active):not(.btn) a:hover {
+    border-bottom: 5px solid #dc7000;
+ 
+}
+
+header nav ul li.btn a, .email .block button {
+    background: #fa9021;
+    padding: 9px 17px;
+    border-radius: 6px;
+    transition: all 500ms ease;
+}
+
+header nav ul li.btn a:hover,
+.email .block button:hover {
+    background: #a02604;
+}
+
+.hero {
+    padding-bottom: 100px;
+    position: relative;
+    z-index: 1;
+}
+
+.hero--info {
+    width: 527px;
+    padding-top: 70px;
+}
+
+.hero--info h2 {
+    font-weight: bold;
+    font-size: 20px;
+    color: #E87D0E;
+}
+
+.hero--info h1 {
+    font-weight: bold;
+    font-size: 50px;
+}
+
+.hero--info p {
+    font-weight: 500;
+    line-height: 200%;
+    margin: 26px 0;
+}
+
+.hero--info .btn {
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+    background: rgb(250,131,5);
+    border-radius: 40px;
+    padding: 14px 30px;
+    border-style: none;
+    transition: all 500ms ease;
+}
+
+.hero--info .btn:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.hero img {
+    position: absolute;
+    top: -150px;
+    right: 0;
+}
+/* end of a hero section */
+
+/* games section */
+.trending {
+    padding-top: 178px;
+}
+
+.trending h3 {
+    font-size: 31px;
+    font-weight: bold;
+}
+
+.trending .see-all, .projects .see-all {
+    background: rgb(255, 255, 255, 0.1 );
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 10px 39px 9px 30px;
+    border-radius: 10px;
+    float: right;
+    display: block;
+    transition: all 500ms ease;
+}
+
+.trending .see-all:hover, .projects .see-all:hover {
+    transform: scale(1.1);
+}
+
+.trending .games {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 57px 0;
+}
+
+.trending .games span {
+    display: block;
+    text-align: center;
+    margin-top: 25px;
+}
+
+.trending .games span img {
+    position: relative;
+    right: 9px;
+    top: 5px
+
+}
+
+.big-text {
+    font-size: 35px;
+    font-weight: 600;
+    text-align: center;
+    width: 826px;
+    margin-top: 129px;
+}
+
+.banner {
+    margin-top: 67px;
+}
+
+.banner h3 {
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 32px;
+}
+
+.banner p {
+    line-height: 187%;
+    margin-bottom: 46px;
+    width: 545px;
+}
+
+.banner img {
+    width: 100%;
+    margin-bottom: 157px;
+}
+
+/*section with image */
+
+.features {
+    background: url('/img/bg.png') no-repeat center center fixed;  
+    background-size: cover;
+    padding: 93px 0;
+}
+
+.features h3,
+.features p {
+    margin-bottom: 25px;
+    text-align: center;
+    max-width: 826px;
+    margin-left: auto;
+    margin-right: auto; 
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.features h3 {
+    font-weight: 800;
+    font-size: 30px;
+}
+
+.block p {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.features .info {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.features .info .block {
+    text-align: center;
+    width: 20%;
+    margin: 30px ;
+}
+
+.features .info .block img {
+    margin-bottom: 15px;
+}
+
+.projects {
+    padding: 100px 0;
+}
+
+.projects h3 {
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.projects p {
+    margin: 15px 0 71px 0;
+    text-align: center;
+}
+
+.projects .images {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 72px;
+}
+
+.projects .see-all {
+    float: none;
+    width: 70px;
+    text-align: center;
+    margin: 0 auto
+}
+
+/* email section */
+
+.email {
+    padding-bottom: 120px;
+}
+
+.email h3 {
+    margin-top: 60px;
+    font-size: 30px;
+}
+
+.email .block {
+    background: #1c140f;
+    margin-top: 74px;
+    border-radius: 15px;
+    padding: 40px 3%;
+    width: 94%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.email .block h4 {
+    font-weight: 500;
+    font-size: 30px;
+}
+
+.email .block p {
+    font-size: 17px;
+    font-weight: 400;
+    width: 636px;
+    margin-top: 10px
+}
+
+.email .block input {
+    background: #fff;
+    outline: none;
+    border: 0;
+    border-radius: 8px;
+    width: 385px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    padding: 14px 0 14px 20px;
+    position: relative;
+    right: -100px;
+    z-index: 1;
+    padding-right: 110px;
+}
+
+.email .block input::placeholder {
+    color: #898989;
+}
+
+.email .block button {
+    cursor: pointer;
+    border: 0;
+    padding: 8px 13px 9px 22px;
+    color: white;
+    position: relative;
+    z-index: 2;
+}
+
+/* Footer */
+footer {
+    background: #000;
+    padding: 73px 0;
+}
+
+footer .blocks {
+    display: flex;
+    justify-content: space-between;
+    display: flex;
+}
+
+footer .blocks p {
+    width: 372px;
+    margin: 15px 0;
+
+}
+
+footer .blocks h4 {
+    font-weight: 500;
+    font-size: 17px;
+}
+
+footer .blocks ul {
+    list-style: none;
+}
+
+footer .blocks ul li {
+    margin-top: 7px;
+}
+
+footer hr {
+    margin: 53px 0 29px 0;
+    border: 0;
+    height: 0.8px;
+    background-color: #D2D2D2;
+}
+
+footer > p {
+    text-align: center;
+    margin: 29px 0 29px 0;
+}
+
+.blocks .social {
+    align-self: flex-end;
+}
+
+/*  */
+
+
+
+
+
+
+
